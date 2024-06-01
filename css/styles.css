@@ -1,0 +1,46 @@
+/* ini css */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > section {
+  display: flex;
+  text-align: center;
+}
+
+.logo-icon {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+}
+
+.nav-item {
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.section-container {
+}
+
+.banner-container {
+  height: 258px;
+  border: 1px solid black;
+}
+
+.facility-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-result {
+  height: 100px;
+  border: 1px solid black;
+}
+
+.message-us-section {
+}
