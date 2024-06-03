@@ -6,89 +6,137 @@
     <title>Portfolio Faiz</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
-    <nav>
-      <div class="logo-icon" ></div>
-      
-      <section>
-        <a class="nav-item" href="#home">Home</a>
-        <a class="nav-item" href="#facilities">Our Facilities</a>
-        <a class="nav-item" href="#message">Message Us</a>
-      </section>
+    <div class="container">
+      <nav>
+        <img src="./css/assets/logo.png" alt="" class="logo" />
+        <section>
+          <a class="nav-item" href="#home">Home</a>
+          <a class="nav-item" href="#featurez">Services</a>
+          <a class="nav-item" href="#acv">Achievement</a>
+          <a class="nav-item" href="#messages">Message Us</a>
+        </section>
       </nav>
+    </div>
 
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h2>Hi <span id="viewer-name">Viewer</span>, Welcome!</h2>
+        <p class="satu">this is my portfolio🚀</p>
+        <div class="banner">
+          <img src="./css/assets/banner.png" alt="Banner Image" />
+        </div>
+      </div>
+    </section>
 
-    <hr />
-
-    <section class="section-container">
-      <!-- Home -->
-      <section>
-        <header>
-          <>Hi Viewer!, Welcome to website</>
-        </header>
-
-        <article>
-          <p>Lorem ipsum</p>
-
-          <div class="banner-container"></div>
-        </article>
+    <!-- Services -->
+    <section class="our-features" id="featurez">
+      <h2>Services</h2>
+      <section class="features">
+        <div class="feature">
+          <img src="./css/assets/a.png" alt="" />
+          <h1>UI Design</h1>
+          <br />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="feature">
+          <img src="./css/assets/b.png" alt="" />
+          <h1>Frontend</h1>
+          <br />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="feature">
+          <img src="./css/assets/c.png" alt="" />
+          <h1>Testing</h1>
+          <br />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
       </section>
+    </section>
 
-      <hr />
-
-      <!-- Our Facilities -->
-      <section id="facilities">
-        <header>
-          <h1>Our Facilities</h1>
-        </header>
-
-        <article class="facility-list">
-        <div>
-          <div style="width: 50px; height: 50px"; border: 1px solid black></div>
-              <h5>Free Refill</h5>
+    <!-- Achievement -->
+    <section class="achievement" id="acv">
+      <h2>Achievement</h2>
+      <section class="acivmen">
+        <div class="acvm">
+          <img src="./css/assets/s.png" alt="" />
+          <h1>Certified FE</h1>
+          <br />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-        
-        <div>
-          <div style="width: 50px; height: 50px"; border: 1px solid black></div>
-              <h5>Free Refill</h5>
+        <div class="acvm" id="premium">
+          <img src="./css/assets/j.png" alt="" />
+          <h1>JS Intermediate</h1>
+          <br />
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-
-        <div>
-          <div style="width: 50px; height: 50px"; border: 1px solid black></div>
-              <h5>Free Refill</h5>
-        </div>
-
-        </article>
       </section>
-      
-      <hr />
+    </section>
 
-      <!-- Message US -->
-      <section id="message">
-        <header>
-          <h1>Message Us</h1>
-        </header>
-
-        <section class="message-us-section">
-          <!-- Form -->
-          <section>
-          <form>
-            <label for="name">Name</label>
-            <input type="text">
+    <!-- Message US -->
+    <section class="message" id="messages">
+      <h2>Message Us</h2>
+      <section class="message-us-section">
+        <!-- Form -->
+        <section>
+          <form id="userForm">
+            <table class="main-table">
+              <tr class="nama">
+                <td class="label-msg">Nama</td>
+                <td>:</td>
+                <td>
+                  <input type="text" class="nm" id="name" placeholder="Nama" />
+                </td>
+              </tr>
+              <tr class="tlr">
+                <td class="label-msg">Tanggal Lahir</td>
+                <td>:</td>
+                <td>
+                  <input type="date" class="ttl" id="dob" />
+                </td>
+              </tr>
+              <tr class="jk">
+                <td class="label-msg">Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                  <input type="radio" name="gender" value="Pria" /> Pria
+                  <input type="radio" name="gender" value="Wanita" /> Wanita
+                </td>
+              </tr>
+              <tr class="msg">
+                <td class="label-msg">Pesan</td>
+                <td>:</td>
+                <td><textarea id="message" placeholder="Pesan"></textarea></td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <th><button type="submit">Submit</button></th>
+                <td></td>
+              </tr>
+            </table>
           </form>
         </section>
 
         <!-- result -->
         <section class="result-container">
           <div class="form-result">
-
+            <p id="currentTime"></p>
+            <p><strong>Nama:</strong> <span id="outputName"></span></p>
+            <p><strong>Tanggal lahir:</strong> <span id="outputDob"></span></p>
+            <p>
+              <strong>Jenis Kelamin:</strong> <span id="outputGender"></span>
+            </p>
+            <p><strong>Pesan:</strong> <span id="outputMessage"></span></p>
           </div>
         </section>
       </section>
     </section>
-</section>
 
-    <footer></footer>
+    <footer>
+      <p class="copyright">© Created by Faiz | All Right reserved.</p>
+    </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
