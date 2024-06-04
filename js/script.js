@@ -1,11 +1,11 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   // Prompt untuk nama viewer saat halaman dimuat
-//   const viewerNameSpan = document.getElementById("viewer-name");
-//   const viewerName = prompt("Masukan nama anda:");
+document.addEventListener("DOMContentLoaded", function () {
+  // Prompt untuk nama viewer saat halaman dimuat
+  const viewerNameSpan = document.getElementById("viewer-name");
+  const viewerName = prompt("Masukan nama anda:");
 
-//   if (viewerName) {
-//     viewerNameSpan.textContent = viewerName;
-//   }
+  if (viewerName) {
+    viewerNameSpan.textContent = viewerName;
+  }
 
   // Form handling dan menampilkan hasil input form
   const form = document.getElementById("userForm");
