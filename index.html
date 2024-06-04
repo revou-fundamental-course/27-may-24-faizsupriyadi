@@ -5,35 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Faiz</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container">
-      <nav>
-        <img src="./css/assets/logo.png" alt="" class="logo" />
-        <section>
-          <a class="nav-item" href="#home">Home</a>
-          <a class="nav-item" href="#featurez">Services</a>
-          <a class="nav-item" href="#acv">Achievement</a>
-          <a class="nav-item" href="#messages">Message Us</a>
-        </section>
+    <header class="header">
+      <a href="#home" class="logo"><img src="../css/assets/testing.png" alt="" class="logo-img"></a>
+
+      <nav class="navbar">
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#acv">Achievement</a>
+          <a href="#messages">Contact Me</a>
       </nav>
-    </div>
+  </header>
 
     <!-- Home -->
     <section class="home" id="home">
       <div class="home-content">
-        <h2>Hi <span id="viewer-name">Viewer</span>, Welcome!</h2>
+        <h2 class="heading">Hi <span id="viewer-name">Viewer</span>, Welcome!</h2>
         <p class="satu">this is my portfolio🚀</p>
         <div class="banner">
-          <img src="./css/assets/banner.png" alt="Banner Image" />
+          <img src="./css/assets/banner.png" alt="" />
         </div>
       </div>
     </section>
 
     <!-- Services -->
-    <section class="our-features" id="featurez">
+    <section class="services" id="services">
       <div class="services-box">
-      <h2>Services</h2>
+      <h2 class="heading">Services</h2>
       <section class="features">
         <div class="feature">
           <img src="./css/assets/a.png" alt="" />
@@ -56,13 +61,12 @@
       </div>
       </section>
     </section>
-    <hr />
 
     <!-- Achievement -->
     <section class="achievement" id="acv">
       <div class="achievement-box">
-      <h2>Achievement</h2>
-      <section class="acivmen">
+      <h2 class="heading">Achievement</h2>
+      <div class="acivmen">
         <div class="acvm">
           <img src="./css/assets/s.png" alt="" />
           <h1>Certified FE</h1>
@@ -77,15 +81,14 @@
         </div>
       </div>
       </section>
-    </section>
 
-    <!-- Message US -->
-    <section class="message" id="messages">
-      <h2>Message Us</h2>
-      <section class="message-us-section">
-        
+    <!-- Contact -->
+    <section class="messages" id="messages">
+      <h2 class="heading">Contact Me</h2>
+      <div class="message-us-section">
+
         <!-- Form -->
-        <section>
+        <div class="testing">
           <form id="userForm">
             <table class="main-table">
               <tr class="nama">
@@ -115,19 +118,14 @@
                 <td>:</td>
                 <td><textarea id="message" placeholder="Pesan"></textarea></td>
               </tr>
-            </table>
-            <table>
               <tr>
                 <th><button type="submit">Submit</button></th>
-                <td></td>
               </tr>
             </table>
-          </form>
-        </section>
+        </div>
 
         <!-- result -->
-        <section class="result-container">
-          <div class="form-result">
+        <div class="result-container">
             <p id="currentTime"></p>
             <p><strong>Nama:</strong> <span id="outputName"></span></p>
             <p><strong>Tanggal lahir:</strong> <span id="outputDob"></span></p>
@@ -136,8 +134,7 @@
             </p>
             <p><strong>Pesan:</strong> <span id="outputMessage"></span></p>
           </div>
-        </section>
-      </section>
+        </div>
     </section>
 
     <footer>
