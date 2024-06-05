@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Form handling dan menampilkan hasil input form
+
   const form = document.getElementById("userForm");
   const outputName = document.getElementById("outputName");
   const outputDob = document.getElementById("outputDob");
@@ -18,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentTime = document.getElementById("currentTime");
 
   // Fungsi untuk memperbarui waktu saat ini
+
   function updateCurrentTime() {
     const now = new Date();
     const options = {
@@ -88,6 +90,7 @@ let navbar = document.querySelector(".navbar");
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
 
+// responsive navbar
 window.onscroll = () => {
   let top = window.scrollY;
 
