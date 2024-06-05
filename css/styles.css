@@ -45,17 +45,15 @@ body {
 }
 
 .logo-img {
-  background: url(../css/assets/p.jpg);
   height: 50px;
   width: 50px;
   border: 3px solid var(--main-color);
   border-radius: 50%;
-  margin-top: 10px;
-  background-size: 100% 100%;
-  margin-bottom: 10px;
   box-shadow: 0 0 25px var(--main-color);
   cursor: pointer;
   transition: 0.4s ease-in-out;
+  object-fit: cover;
+  object-position: center;
 }
 
 .logo-img:hover {
@@ -119,22 +117,26 @@ span {
   color: var(--main-color);
 }
 
-.banner {
+.banner-container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-
-.banner img {
+.banner-img {
+  height: 50vh;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   top: 3rem;
   width: 50vw;
   box-shadow: 0 0 25px var(--main-color);
   cursor: pointer;
   transition: 0.4s ease-in-out;
+  display: none;
 }
 
-.banner img:hover {
+.banner-img:hover {
   box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
     0 0 100px var(--main-color);
 }
@@ -350,11 +352,9 @@ span {
     flex-direction: column;
     align-items: center;
   }
-
   .main-table {
     width: 100%;
   }
-
   .result-container {
     width: 100%;
   }
@@ -409,7 +409,10 @@ span {
     border-bottom-left-radius: 2rem;
     border-left: 2px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
-    display: contents;
+    display: none;
+  }
+  .navbar.active {
+    display: block;
   }
   .navbar a {
     display: block;
@@ -437,7 +440,6 @@ span {
     flex-direction: column;
     align-items: center;
   }
-
   .main-table {
     width: 100%;
   }
