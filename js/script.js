@@ -1,3 +1,5 @@
+//ini javascript
+
 document.addEventListener("DOMContentLoaded", function () {
   // Prompt untuk nama viewer saat website ditest
   const viewerNameSpan = document.getElementById("viewer-name");
@@ -31,6 +33,30 @@ document.addEventListener("DOMContentLoaded", function () {
     currentTime.textContent = `Waktu saat ini: ${formattedTime}`;
   }
 
+  //slide show
+
+  let indexSlide = 1;
+  showBanner(1);
+
+  function nextSlide(n) {
+    showBanner((indexSlide += n));
+  }
+
+  function showBanner(indexBanner) {
+    let listImage = document.getElementsByClassName("banner-img");
+    if (indexBanner > listImage.length) indexSlide = 1;
+
+    let index = 0;
+    while (index < listImage.length) {
+      listImage[index].style.display = "none";
+      index++;
+    }
+
+    listImage[indexSlide - 1].style.display = "block";
+  }
+
+  setInterval(() => nextSlide(1), 3000);
+
   // Event listener untuk submit form
   form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -63,18 +89,19 @@ let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
 
 window.onscroll = () => {
+  let top = window.scrollY;
+
   sections.forEach((sec) => {
-    let top = window.scrollY;
     let offset = sec.offsetTop - 150;
     let height = sec.offsetHeight;
     let id = sec.getAttribute("id");
 
     if (top >= offset && top < offset + height) {
-      navLinks.forEach((links) => {
-        links.classList.remove("active");
-        document
-          .querySelector("header nav a [href*=" + id + "]")
-          .classList.add("active");
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(id)) {
+          link.classList.add("active");
+        }
       });
     }
   });

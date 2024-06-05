@@ -12,9 +12,9 @@
   </head>
   <body>
     <header class="header">
-      <a href="#home" class="logo"
-        ><img src="../css/assets/p.jpg" alt="" class="logo-img"
-      /></a>
+      <a href="#home" class="logo" >
+        <img src="assets/testing.png" alt="" class="logo-img" />
+      </a>
       <i class="bx bx-menu" id="menu-icon"></i>
 
       <nav class="navbar">
@@ -32,9 +32,10 @@
           Hi <span id="viewer-name">Viewer</span>, Welcome!
         </h2>
         <p class="satu">this is my portfolio🚀</p>
-        <div class="banner">
-          <img src="./css/assets/banner.png" alt="" />
-        </div>
+        <div class="banner-container">
+          <div class="banner-img" style="background-image: url(/assets/1.png);"></div>
+          <div class="banner-img" style="background-image: url(/assets/2.png);"></div>
+          <div class="banner-img" style="background-image: url(/assets/3.png);"></div>
       </div>
     </section>
 
@@ -46,19 +47,19 @@
         <div class="features">
           <div class="wrapper">
             <div class="feature">
-              <img src="./css/assets/a.png" alt="" />
+              <img src="/assets/a.png" alt="" />
               <h1>UI Design</h1>
               <br />
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="feature">
-              <img src="./css/assets/b.png" alt="" />
+              <img src="/assets/b.png" alt="" />
               <h1>Frontend</h1>
               <br />
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="feature">
-              <img src="./css/assets/c.png" alt="" />
+              <img src="assets/c.png" alt="" />
               <h1>Testing</h1>
               <br />
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -76,13 +77,13 @@
         <div class="acv">
           <div class="acivmen">
             <div class="acvm">
-              <img src="./css/assets/s.png" alt="" />
+              <img src="assets/s.png" alt="" />
               <h1>Certified FE</h1>
               <br />
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="acvm">
-              <img src="./css/assets/j.png" alt="" />
+              <img src="assets/j.png" alt="" />
               <h1>JS Intermediate</h1>
               <br />
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -104,14 +105,14 @@
                 <td class="label-msg">Nama</td>
                 <td>:</td>
                 <td class="input-field">
-                  <input type="text" class="nm" id="name" placeholder="Nama" />
+                  <input type="text" class="nm" id="name" placeholder="Nama" required/>
                 </td>
               </tr>
               <tr class="tlr">
                 <td class="label-msg">Tanggal Lahir</td>
                 <td>:</td>
                 <td class="input-field">
-                  <input type="date" class="ttl" id="dob" />
+                  <input type="date" class="ttl" id="dob" required/>
                 </td>
               </tr>
               <tr class="jk">
@@ -126,7 +127,7 @@
                 <td class="label-msg">Pesan</td>
                 <td>:</td>
                 <td class="input-field">
-                  <textarea id="message" placeholder="Pesan"></textarea>
+                  <textarea id="message" placeholder="Pesan" required></textarea>
                 </td>
               </tr>
             </table>
@@ -148,6 +149,6 @@
       <p class="copyright">© Created by Faiz | All Right reserved.</p>
     </footer>
 
-    <script src="./js/script.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
