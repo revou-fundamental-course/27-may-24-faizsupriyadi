@@ -5,90 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Faiz</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
-
   <body>
-    <nav>
-      <div class="logo-icon" ></div>
-      
-      <section>
-        <a class="nav-item" href="#home">Home</a>
-        <a class="nav-item" href="#facilities">Our Facilities</a>
-        <a class="nav-item" href="#message">Message Us</a>
-      </section>
+    <header class="header">
+      <a href="#home" class="logo"
+        ><img src="../css/assets/testing.png" alt="" class="logo-img"
+      /></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#achievement">Achievement</a>
+        <a href="#messages">Contact Me</a>
       </nav>
+    </header>
 
-
-    <hr />
-
-    <section class="section-container">
-      <!-- Home -->
-      <section>
-        <header>
-          <>Hi Viewer!, Welcome to website</>
-        </header>
-
-        <article>
-          <p>Lorem ipsum</p>
-
-          <div class="banner-container"></div>
-        </article>
-      </section>
-
-      <hr />
-
-      <!-- Our Facilities -->
-      <section id="facilities">
-        <header>
-          <h1>Our Facilities</h1>
-        </header>
-
-        <article class="facility-list">
-        <div>
-          <div style="width: 50px; height: 50px"; border: 1px solid black></div>
-              <h5>Free Refill</h5>
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h2 class="heading">
+          Hi <span id="viewer-name">Viewer</span>, Welcome!
+        </h2>
+        <p class="satu">this is my portfolio🚀</p>
+        <div class="banner">
+          <img src="./css/assets/banner.png" alt="" />
         </div>
-        
-        <div>
-          <div style="width: 50px; height: 50px"; border: 1px solid black></div>
-              <h5>Free Refill</h5>
-        </div>
-
-        <div>
-          <div style="width: 50px; height: 50px"; border: 1px solid black></div>
-              <h5>Free Refill</h5>
-        </div>
-
-        </article>
-      </section>
-      
-      <hr />
-
-      <!-- Message US -->
-      <section id="message">
-        <header>
-          <h1>Message Us</h1>
-        </header>
-
-        <section class="message-us-section">
-          <!-- Form -->
-          <section>
-          <form>
-            <label for="name">Name</label>
-            <input type="text">
-          </form>
-        </section>
-
-        <!-- result -->
-        <section class="result-container">
-          <div class="form-result">
-
-          </div>
-        </section>
-      </section>
+      </div>
     </section>
-</section>
 
-    <footer></footer>
+    <!-- Services -->
+    <section class="services" id="services">
+      <h2 class="heading">Services</h2>
+
+      <div class="services-box">
+        <div class="features">
+          <div class="wrapper">
+            <div class="feature">
+              <img src="./css/assets/a.png" alt="" />
+              <h1>UI Design</h1>
+              <br />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="feature">
+              <img src="./css/assets/b.png" alt="" />
+              <h1>Frontend</h1>
+              <br />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="feature">
+              <img src="./css/assets/c.png" alt="" />
+              <h1>Testing</h1>
+              <br />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievement -->
+    <section class="achievement" id="achievement">
+      <h2 class="heading">Achieves</h2>
+
+      <div class="achievement-box">
+        <div class="acv">
+          <div class="acivmen">
+            <div class="acvm">
+              <img src="./css/assets/s.png" alt="" />
+              <h1>Certified FE</h1>
+              <br />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="acvm">
+              <img src="./css/assets/j.png" alt="" />
+              <h1>JS Intermediate</h1>
+              <br />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="messages" id="messages">
+      <h2 class="heading">Contact Me</h2>
+      <div class="message-us-section">
+        <!-- Form -->
+        <div class="form-container">
+          <form class="form" id="userForm">
+            <table class="main-table">
+              <tr class="nama">
+                <td class="label-msg">Nama</td>
+                <td>:</td>
+                <td class="input-field">
+                  <input type="text" class="nm" id="name" placeholder="Nama" />
+                </td>
+              </tr>
+              <tr class="tlr">
+                <td class="label-msg">Tanggal Lahir</td>
+                <td>:</td>
+                <td class="input-field">
+                  <input type="date" class="ttl" id="dob" />
+                </td>
+              </tr>
+              <tr class="jk">
+                <td class="label-msg">Jenis Kelamin</td>
+                <td>:</td>
+                <td class="input-field">
+                  <input type="radio" name="gender" value="Pria" /> Pria
+                  <input type="radio" name="gender" value="Wanita" /> Wanita
+                </td>
+              </tr>
+              <tr class="msg">
+                <td class="label-msg">Pesan</td>
+                <td>:</td>
+                <td class="input-field">
+                  <textarea id="message" placeholder="Pesan"></textarea>
+                </td>
+              </tr>
+            </table>
+            <button class="btn" type="submit">Submit</button>
+          </form>
+        </div>
+        <!-- result -->
+        <div class="result-container">
+          <p id="currentTime"></p>
+          <p><strong>Nama:</strong> <span id="outputName"></span></p>
+          <p><strong>Tanggal lahir:</strong> <span id="outputDob"></span></p>
+          <p><strong>Jenis Kelamin:</strong> <span id="outputGender"></span></p>
+          <p><strong>Pesan:</strong> <span id="outputMessage"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="copyright">© Created by Faiz | All Right reserved.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
