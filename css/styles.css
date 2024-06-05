@@ -45,6 +45,7 @@ body {
 }
 
 .logo-img {
+  background: url(../css/assets/p.jpg);
   height: 50px;
   width: 50px;
   border: 3px solid var(--main-color);
